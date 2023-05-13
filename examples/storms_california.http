@@ -1,5 +1,5 @@
 GET http://localhost:8000/articles
-    ?topic=California%20storms 
+    ?topic=California%20storms
     &lat_analysis=36.778259
     &lon_analysis=-119.417931
     &num_days_analysis=5

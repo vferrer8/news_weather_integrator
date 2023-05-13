@@ -39,7 +39,7 @@ The following image shows the pipeline workflow:
 
 **Not implemented in the source code:**
 
-5.1. The data could be stored in a data base and run the pipeline on schedule to collect real time data and provide a wider dataset to the user. 
+5.1. The data could be stored in a data base and run the pipeline on schedule to collect real time data and provide a wider dataset to the user.
 
 5.2. The data could be sent back to the application based on filtering and sortering parameters.
 
@@ -84,7 +84,7 @@ However, the application is using `requests` library.
     Run the file with:
     ```
     .env.bat
-    ``` 
+    ```
 
 - For Linux users:
 
@@ -96,7 +96,7 @@ However, the application is using `requests` library.
     Run the file with:
     ```
     source .env.sh
-    ``` 
+    ```
 
 ## Run the application
 ```shell
@@ -109,11 +109,11 @@ Access ` http://127.0.0.1:8000/docs` to see the interactive API documentation.
 
 ## Examples
 ```http
-    GET http://localhost:8000/articles    
+    GET http://localhost:8000/articles
 ```
 - ### **Extreme heat in Spain**
     This example provides a collection of articles related to recent extream heat in Spain with statistical weather data.
-    
+
     **Query parameters**:
 
     `topic` = extreme heat Spain
