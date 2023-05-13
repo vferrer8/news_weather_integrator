@@ -2,14 +2,12 @@ from pydantic import BaseModel
 from typing import Optional
 
 class WeatherStats(BaseModel):
-    feels_like_mean: float
-    feels_like_std: float
-    temp_mean: float
-    temp_std: float
-    temp_max_mean: float
-    temp_max_std: float
-    temp_min_mean: float
-    temp_min_std: float
+    feels_like_mean: Optional[float]
+    feels_like_std: Optional[float]
+    temp_mean: Optional[float]
+    temp_std: Optional[float]
+    temp_max: Optional[float]
+    temp_min: Optional[float]
 
 class Source(BaseModel):
     id: Optional[str]
@@ -25,3 +23,6 @@ class Article(BaseModel):
     url: str
     urlToImage: str
     weather_stats: WeatherStats
+
+class ServerError(BaseModel):
+    detail: str

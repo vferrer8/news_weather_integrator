@@ -1,0 +1,222 @@
+GET http://localhost:8000/articles
+    ?topic=extreme%20heat%20Spain
+    &lat_analysis=40.4637
+    &lon_analysis=-3.703
+    &num_days_analysis=5
+    &weather_units=metric
+Content-Type: application/json
+
+# RESPONSE
+
+# [
+#   {
+#     "author": "Sam Jones in Madrid",
+#     "content": "The Spanish government has advised people to take extra care as the drought-stricken country experiences record-breaking temperatures that could result in an unprecedented April temperature of 39C (1… [+3174 chars]",
+#     "description": "Government warns people to take precautions amid drought and heat 7C-11C above average for time of yearThe Spanish government has advised people to take extra care as the drought-stricken country experiences record-breaking temperatures that could result in a…",
+#     "publishedAt": "2023-04-27T13:55:46Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "Spain braced for record April temperature of 39C as extreme heat causes misery",
+#     "url": "https://www.theguardian.com/world/2023/apr/27/spain-braced-for-record-april-temperature-of-39c-as-heatwave-causes-misery",
+#     "urlToImage": "https://i.guim.co.uk/img/media/e0768594d6ee3eac8b77ad6f451a21f59fb52f03/0_0_4683_2810/master/4683.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c3c502ce136c8507778581de2b666586",
+#     "weather_stats": {
+#       "feels_like_mean": 18.048833333333334,
+#       "feels_like_std": 4.869234437321975,
+#       "temp_mean": 18.897083333333335,
+#       "temp_std": 4.779535752539562,
+#       "temp_max": 29.61,
+#       "temp_min": 6.13
+#     }
+#   },
+#   {
+#     "author": "Laura Millan / Bloomberg",
+#     "content": "Spain and Portugal recorded their hottest April on record as a mass of hot air brought temperatures above 30C and close to 40C in some areas at the end of the month.\r\nLast month was the fourth-hottes… [+2156 chars]",
+#     "description": "The extreme heat in the western Mediterranean region would have been almost impossible without climate change.",
+#     "publishedAt": "2023-05-08T13:41:29Z",
+#     "source": {
+#       "id": "time",
+#       "name": "Time"
+#     },
+#     "title": "Spain and Portugal Experience Hottest April Ever Recorded",
+#     "url": "https://time.com/6277906/spain-portugal-hottest-april-on-record/",
+#     "urlToImage": "https://api.time.com/wp-content/uploads/2023/05/spain-extreme-heat-record-april-2023.jpg?quality=85&w=1024&h=628&crop=1",
+#     "weather_stats": {
+#       "feels_like_mean": 19.12775,
+#       "feels_like_std": 4.544614221732109,
+#       "temp_mean": 20.072583333333334,
+#       "temp_std": 4.441053038845351,
+#       "temp_max": 30.96,
+#       "temp_min": 9.13
+#     }
+#   },
+#   {
+#     "author": "Damian Carrington Environment editor",
+#     "content": "The record-shattering temperatures that hit the western Mediterranean last week would have been almost impossible without the climate crisis, according to scientists.\r\nThe heatwave across Spain, Port… [+3537 chars]",
+#     "description": "Extreme event would have been expected once in 40,000 years before global heating, scientists estimateThe record-shattering temperatures that hit the western Mediterranean last week would have been “almost impossible” without the climate crisis, according to …",
+#     "publishedAt": "2023-05-05T13:00:23Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "April Mediterranean heatwave ‘almost impossible’ without climate crisis",
+#     "url": "https://www.theguardian.com/environment/2023/may/05/april-mediterranean-heatwave-almost-impossible-without-climate-crisis",
+#     "urlToImage": "https://i.guim.co.uk/img/media/1b74c454d7b3a28d2c77ba3bf4a08e0a0f91aeee/0_177_5000_3001/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=db3aaec6f529f3056dc6be51f794ebed",
+#     "weather_stats": {
+#       "feels_like_mean": 18.634333333333334,
+#       "feels_like_std": 4.830671045010003,
+#       "temp_mean": 19.65333333333333,
+#       "temp_std": 4.696741823168631,
+#       "temp_max": 30.96,
+#       "temp_min": 8.36
+#     }
+#   },
+#   {
+#     "author": "Morgan Winsor",
+#     "content": "LONDON -- Human-caused climate change led to the record-breaking heat wave that hit Spain, Portugal, Morocco and Algeria last month, according to a new study.\r\nIn fact, researchers found that those s… [+3617 chars]",
+#     "description": "A new study says the heatwave that hit Spain, Portugal, Morocco and Algeria in April was made at least 100 times more likely due to human-caused climate change.",
+#     "publishedAt": "2023-05-05T17:17:17Z",
+#     "source": {
+#       "id": "abc-news",
+#       "name": "ABC News"
+#     },
+#     "title": "Extreme heat in the Mediterranean was caused by climate change: Study",
+#     "url": "https://abcnews.go.com/International/researchers-extreme-heat-mediterranean-caused-climate-change/story?id=99100248",
+#     "urlToImage": "https://s.abcnews.com/images/International/portugal-weather-1-gty-thg-230505_1683290017915_hpMain_16x9_992.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 18.677,
+#       "feels_like_std": 4.8733755492161155,
+#       "temp_mean": 19.700666666666667,
+#       "temp_std": 4.743078412711691,
+#       "temp_max": 30.96,
+#       "temp_min": 8.36
+#     }
+#   },
+#   {
+#     "author": "https://www.facebook.com/bbcnews",
+#     "content": "A blistering heatwave is hitting Spain with the country experiencing temperatures normally seen in high summer. \r\nForecasters fear the mercury could go over 38C on Thursday, the highest April reading… [+4622 chars]",
+#     "description": "Temperatures could exceed 38C in southern Spain today as an influx of heat from Africa brings summer early.",
+#     "publishedAt": "2023-04-27T12:59:58Z",
+#     "source": {
+#       "id": "bbc-news",
+#       "name": "BBC News"
+#     },
+#     "title": "Climate change: Spain braced for record April temperatures",
+#     "url": "https://www.bbc.co.uk/news/science-environment-65403381",
+#     "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/71CB/production/_129513192_gettyimages-1252194620.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 17.966166666666663,
+#       "feels_like_std": 4.801264396377435,
+#       "temp_mean": 18.813416666666665,
+#       "temp_std": 4.704009463746221,
+#       "temp_max": 29.32,
+#       "temp_min": 6.13
+#     }
+#   },
+#   {
+#     "author": "JENNIFER O'MAHONY and SETH BORENSTEIN",
+#     "content": "MADRID (AP) Record-breaking April temperatures in Spain, Portugal and northern Africa were made 100 times more likely by human-caused climate change, a new flash study found, and would have been almo… [+4549 chars]",
+#     "description": "Record-breaking April temperatures in Spain, Portugal and northern Africa were made 100 times more likely by human-caused climate change, a new flash study...",
+#     "publishedAt": "2023-05-05T13:03:44Z",
+#     "source": {
+#       "id": null,
+#       "name": "Yahoo Entertainment"
+#     },
+#     "title": "Spain's April heat nearly impossible without climate change",
+#     "url": "https://news.yahoo.com/spains-april-heat-nearly-impossible-130344390.html",
+#     "urlToImage": "https://s.yimg.com/ny/api/res/1.2/D57TFM2dMS6o5QcaQoR4ag--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/ap.org/efed99add1f53118b2e74645bc91ef4c",
+#     "weather_stats": {
+#       "feels_like_mean": 18.634333333333334,
+#       "feels_like_std": 4.830671045010003,
+#       "temp_mean": 19.65333333333333,
+#       "temp_std": 4.696741823168631,
+#       "temp_max": 30.96,
+#       "temp_min": 8.36
+#     }
+#   },
+#   {
+#     "author": "Chelsea Harvey, E&E News",
+#     "content": "CLIMATEWIRE | A record-breaking heat wave in the western Mediterranean last month would have been nearly impossible without the influence of climate change, new research finds.\r\nAnd even with the hel… [+5079 chars]",
+#     "description": "High temperature records have been set from Portugal to Thailand as heat waves fueled by climate change have arrived early this spring",
+#     "publishedAt": "2023-05-08T16:00:00Z",
+#     "source": {
+#       "id": null,
+#       "name": "Politicopro.com"
+#     },
+#     "title": "Heat Waves Fueled by Climate Change Topple Records around the Globe",
+#     "url": "https://subscriber.politicopro.com/article/eenews/2023/05/08/early-heat-waves-topple-records-around-the-globe-00095700",
+#     "urlToImage": "https://static.scientificamerican.com/sciam/cache/file/9460214B-0766-4D76-8F864E8AD66BD1B4.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 19.193884297520658,
+#       "feels_like_std": 4.583969599212169,
+#       "temp_mean": 20.144545454545458,
+#       "temp_std": 4.4917448354360765,
+#       "temp_max": 30.96,
+#       "temp_min": 9.13
+#     }
+#   },
+#   {
+#     "author": "https://www.facebook.com/bbcnews",
+#     "content": "Vietnam has recorded its highest ever temperature, just over 44C (111F) - with experts predicting it would soon be surpassed because of climate change.\r\nThe record was set in the northern province of… [+1988 chars]",
+#     "description": "One farmer said the fierce heat meant people had to finish work by 10 o'clock in the morning.",
+#     "publishedAt": "2023-05-07T12:18:47Z",
+#     "source": {
+#       "id": "bbc-news",
+#       "name": "BBC News"
+#     },
+#     "title": "Climate change: Vietnam records highest-ever temperature of 44.1C",
+#     "url": "https://www.bbc.co.uk/news/world-asia-65518528",
+#     "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12CB6/production/_129628967_gettyimages-1249172249.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 19.30725,
+#       "feels_like_std": 4.540148437676289,
+#       "temp_mean": 20.27875,
+#       "temp_std": 4.409775916580545,
+#       "temp_max": 30.96,
+#       "temp_min": 9.13
+#     }
+#   },
+#   {
+#     "author": "Madeleine Cuff",
+#     "content": "Sunset at the island of Gran Canaria, Spain, on 26 April\r\nBORJA SUAREZ/Reuters\r\nA blistering and unseasonable heatwave has struck southern Spain, Portugal and Morocco this week, with temperatures app… [+3906 chars]",
+#     "description": "A spring heatwave across parts of southern Europe is seeing temperature records for April broken in many countries. Why is this happening, and will the summer also be hot?",
+#     "publishedAt": "2023-04-28T15:40:55Z",
+#     "source": {
+#       "id": "new-scientist",
+#       "name": "New Scientist"
+#     },
+#     "title": "Spanish heatwave: Is climate change behind record heat in Europe?",
+#     "url": "https://www.newscientist.com/article/2371331-spanish-heatwave-is-climate-change-behind-record-heat-in-europe/",
+#     "urlToImage": "https://images.newscientist.com/wp-content/uploads/2023/04/28153808/SEI_153782814.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 19.893916666666666,
+#       "feels_like_std": 4.837357132423721,
+#       "temp_mean": 20.76066666666667,
+#       "temp_std": 4.850075756721576,
+#       "temp_max": 32.28,
+#       "temp_min": 8.13
+#     }
+#   },
+#   {
+#     "author": "Science X",
+#     "content": "In the summer of 2022, over 20,000 excess deaths across Spain, France, Germany and Great Britain were suggested to have been linked to extremely hot weather. In the context of global warming where cl… [+8234 chars]",
+#     "description": "In the summer of 2022, over 20,000 excess deaths across Spain, France, Germany and Great Britain were suggested to have been linked to extremely hot weather. In the context of global warming where climate models point to the fact that extreme heat waves are l…",
+#     "publishedAt": "2023-04-27T13:46:04Z",
+#     "source": {
+#       "id": null,
+#       "name": "Phys.Org"
+#     },
+#     "title": "Researchers call for incorporating heat stress indices into communication of dangerous heat waves",
+#     "url": "https://phys.org/news/2023-04-incorporating-stress-indices-communication-dangerous.html",
+#     "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2023/researchers-call-for-i.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 18.048833333333334,
+#       "feels_like_std": 4.869234437321975,
+#       "temp_mean": 18.897083333333335,
+#       "temp_std": 4.779535752539562,
+#       "temp_max": 29.61,
+#       "temp_min": 6.13
+#     }
+#   }
+# ]

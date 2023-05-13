@@ -1,0 +1,222 @@
+GET http://localhost:8000/articles
+    ?topic=Somerset%20flooding
+    &lat_analysis=51.18
+    &lon_analysis=-3.0
+    &num_days_analysis=5
+    &weather_units=metric
+Content-Type: application/json
+
+# RESPONSE
+
+# [
+#   {
+#     "author": "Sandra Laville",
+#     "content": "A £50m scheme to protect thousands of homes from flooding by the autumn has been pulled by the Environment Agency.\r\nBusinesses that put together bids for the scheme to provide homes in England with f… [+8684 chars]",
+#     "description": "Businesses that put together bids for flood doors, non-return valves and waterproof floors say they have spent tens of thousandsA £50m scheme to protect thousands of homes from flooding by the autumn has been pulled by the Environment Agency.Businesses that p…",
+#     "publishedAt": "2023-05-12T06:00:46Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "Environment Agency pulls £50m scheme to protect homes in England from flooding",
+#     "url": "https://www.theguardian.com/environment/2023/may/12/environment-agency-pulls-50m-scheme-to-protect-homes-in-england-from-flooding",
+#     "urlToImage": "https://i.guim.co.uk/img/media/eb1469045ff2c5f4821210d58d37a946fb665a74/0_116_4500_2700/master/4500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8b47422a2d80c5e7a2b691e69f34711d",
+#     "weather_stats": {
+#       "feels_like_mean": 12.578333333333335,
+#       "feels_like_std": 1.9311577636545518,
+#       "temp_mean": 12.91875,
+#       "temp_std": 1.8819780236529344,
+#       "temp_max": 19.35,
+#       "temp_min": 6.92
+#     }
+#   },
+#   {
+#     "author": "Rachel Hall",
+#     "content": "Flash flooding in parts of south-west England following torrential rain has led to a major incident being declared in Somerset.\r\nHeavy thunderstorms on Tuesday evening resulted in Devon and Somerset … [+2843 chars]",
+#     "description": "Heavy thunderstorms cause dangerous driving conditions, blocked roads and damage to homesFlash flooding in parts of south-west England following torrential rain has led to a major incident being declared in Somerset.Heavy thunderstorms on Tuesday evening resu…",
+#     "publishedAt": "2023-05-10T12:12:36Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "Somerset: major incident declared after flash flooding",
+#     "url": "https://www.theguardian.com/environment/2023/may/10/somerset-major-incident-declared-after-flash-flooding",
+#     "urlToImage": "https://i.guim.co.uk/img/media/8ac1c50f33d497655c0bb9fd595095768ab9eb6e/112_376_3340_2004/master/3340.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c3627ec8bd219c4bb708435e1ebabf58",
+#     "weather_stats": {
+#       "feels_like_mean": 13.009500000000001,
+#       "feels_like_std": 1.7383406798805954,
+#       "temp_mean": 13.275166666666667,
+#       "temp_std": 1.689433788761976,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   },
+#   {
+#     "author": "Jamie Bullen",
+#     "content": "Devon and Somerset Fire and Rescue Service urged drivers to avoid flooded roads as it declared the major incident on Tuesday night as heavy thunderstorms lashed the country.\r\nThe statement read: \"A M… [+976 chars]",
+#     "description": "People were ordered to leave their homes on Tuesday night after heavy thunderstorms caused homes to flood",
+#     "publishedAt": "2023-05-10T07:19:52Z",
+#     "source": {
+#       "id": null,
+#       "name": "Telegraph.co.uk"
+#     },
+#     "title": "UK weather: Somerset hit by flash floods and mudslides",
+#     "url": "https://www.telegraph.co.uk/news/2023/05/10/somerset-flash-floods-mudslides-major-incident-uk-weather/",
+#     "urlToImage": "https://www.telegraph.co.uk/content/dam/news/2023/05/10/TELEMMGLPICT000335076352_trans_NvBQzQNjv4BqaivqAvBJWkUV8VzepAMjBRkCIv3505E63jNjQF1Hma4.jpeg?impolicy=logo-overlay",
+#     "weather_stats": {
+#       "feels_like_mean": 13.077666666666667,
+#       "feels_like_std": 1.8050055207594211,
+#       "temp_mean": 13.338750000000001,
+#       "temp_std": 1.755279940085691,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   },
+#   {
+#     "author": "Emma Gatten",
+#     "content": "Meteorologists differentiate between rain, which is prolonged wet weather, and showers, which are part of a much more changeable weather pattern.\r\nShowers are produced by individual clouds, rather th… [+1079 chars]",
+#     "description": "Extreme rainfall events are expected to become more common as the climate warms",
+#     "publishedAt": "2023-05-10T17:42:21Z",
+#     "source": {
+#       "id": null,
+#       "name": "Telegraph.co.uk"
+#     },
+#     "title": "The flash flooding in Devon and Somerset explained",
+#     "url": "https://www.telegraph.co.uk/news/2023/05/10/devon-somerset-flooding-explained/",
+#     "urlToImage": "https://img.youtube.com/vi/RcZQAa9oXjg/maxresdefault.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 12.93525,
+#       "feels_like_std": 1.628000249055377,
+#       "temp_mean": 13.207583333333334,
+#       "temp_std": 1.581051132023512,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   },
+#   {
+#     "author": "https://www.facebook.com/bbcnews",
+#     "content": "A major incident has been declared in response to flooding in parts of Somerset. \r\nDevon and Somerset Fire and Rescue Service (DSFR) has resources deployed in the Galhampton, North Cadbury and South … [+3214 chars]",
+#     "description": "Other parts of England have also seen torrential rain, causing damage to homes and businesses.",
+#     "publishedAt": "2023-05-10T07:10:24Z",
+#     "source": {
+#       "id": "bbc-news",
+#       "name": "BBC News"
+#     },
+#     "title": "Somerset flooding: Major incident declared after heavy rain",
+#     "url": "https://www.bbc.co.uk/news/uk-england-somerset-65542510",
+#     "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/47D0/production/_129648381_fvs8fzvxwaageau.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 13.077666666666667,
+#       "feels_like_std": 1.8050055207594211,
+#       "temp_mean": 13.338750000000001,
+#       "temp_std": 1.755279940085691,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   },
+#   {
+#     "author": "Oliver Browning",
+#     "content": "A major incident has been declared after Somerset was hit by severe flooding and torrential rainfall.\r\nFootage shared on social media, from the village of Queen Camel, shows roads submerged by floodw… [+383 chars]",
+#     "description": "A major incident has been declared after Somerset was hit by severe flooding and torrential rainfall.",
+#     "publishedAt": "2023-05-10T10:10:08Z",
+#     "source": {
+#       "id": "independent",
+#       "name": "Independent"
+#     },
+#     "title": "Flash flooding hits Somerset as major incident declared after thunderstorm",
+#     "url": "https://www.independent.co.uk/tv/news/flash-flood-somerset-thunderstorm-rain-b2336189.html",
+#     "urlToImage": "https://cdn.jwplayer.com/v2/media/OpU5u2V5/poster.jpg?width=720",
+#     "weather_stats": {
+#       "feels_like_mean": 13.045666666666667,
+#       "feels_like_std": 1.7892746445141956,
+#       "temp_mean": 13.309999999999999,
+#       "temp_std": 1.7408377197161586,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   },
+#   {
+#     "author": "https://www.facebook.com/bbcnews",
+#     "content": "Two schools in Devon have been affected by flooding during thunderstorms.\r\nTipton St John Primary School, near Otter St Mary, and Woodbury Salterton Primary School were impacted during storms, Devon … [+2649 chars]",
+#     "description": "Schools in Tipton St John and Woodbury Salterton are affected by heavy rain in thunderstorms.",
+#     "publishedAt": "2023-05-09T16:56:16Z",
+#     "source": {
+#       "id": "bbc-news",
+#       "name": "BBC News"
+#     },
+#     "title": "Two Devon schools affected by flooding",
+#     "url": "https://www.bbc.co.uk/news/uk-england-devon-65537882",
+#     "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2DAE/production/_129649611_tipton_st_john_flooding_alex_wren_1_edit.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 13.206500000000002,
+#       "feels_like_std": 1.7076022060531681,
+#       "temp_mean": 13.458499999999999,
+#       "temp_std": 1.6680132851172773,
+#       "temp_max": 19.35,
+#       "temp_min": 8.49
+#     }
+#   },
+#   {
+#     "author": "Jane Dalton",
+#     "content": "For free real time breaking news alerts sent straight to your inbox sign up to our breaking news emails\r\nSign up to our free breaking news emails\r\nThunderstorms could hit parts of the UK after flash … [+3278 chars]",
+#     "description": "Yellow warning of thunderstorms issued for much of UK, from Kent to Scotland",
+#     "publishedAt": "2023-05-11T05:20:02Z",
+#     "source": {
+#       "id": "independent",
+#       "name": "Independent"
+#     },
+#     "title": "UK weather: Met Office issues warning to parts of Britain",
+#     "url": "https://www.independent.co.uk/weather/weather-today-met-office-reading-b2336744.html",
+#     "urlToImage": "https://static.independent.co.uk/2023/05/10/14/newFile-5.jpg?quality=75&width=1200&auto=webp",
+#     "weather_stats": {
+#       "feels_like_mean": 12.7425,
+#       "feels_like_std": 1.795257173590383,
+#       "temp_mean": 13.039166666666665,
+#       "temp_std": 1.719369428742118,
+#       "temp_max": 19.35,
+#       "temp_min": 7.23
+#     }
+#   },
+#   {
+#     "author": "Independent.ie",
+#     "content": "Hail, thunder, lightning and large raindrops hit Norwich as thunderstorms and flash flooding across the UK lead to a major incident being declared in Somerset.",
+#     "description": "Hail, thunder, lightning and large raindrops hit Norwich as thunderstorms and flash flooding across the UK lead to a major incident being declared in Somerset.",
+#     "publishedAt": "2023-05-11T08:15:04Z",
+#     "source": {
+#       "id": null,
+#       "name": "Independent.ie"
+#     },
+#     "title": "Thunderstorms and flash flooding hit the UK",
+#     "url": "https://www.independent.ie/videos/thunderstorms-and-flash-flooding-hit-the-uk/a225865198.html",
+#     "urlToImage": "https://focus.independent.ie/thumbor/-kUWLwn8Q4YEuCKb6U9J1mEE0sA=/150x0:1770x1080/1620x1080/prod-mh-ireland/e872bfad-6b77-4cfd-a29a-e7339f9f10e8/95481b2c-4fee-4393-82c5-bd0320e4ddb5/video/video.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 12.726833333333333,
+#       "feels_like_std": 1.8090816572440922,
+#       "temp_mean": 13.029083333333334,
+#       "temp_std": 1.7307146218371463,
+#       "temp_max": 19.35,
+#       "temp_min": 7.23
+#     }
+#   },
+#   {
+#     "author": "Stuti Mishra",
+#     "content": "For free real time breaking news alerts sent straight to your inbox sign up to our breaking news emails\r\nSign up to our free breaking news emails\r\nParts of the UK have been hit by hailstorms and thun… [+2070 chars]",
+#     "description": "More thunder and rain expected in several parts as UK continues to see unsettled weather",
+#     "publishedAt": "2023-05-10T04:39:46Z",
+#     "source": {
+#       "id": "independent",
+#       "name": "Independent"
+#     },
+#     "title": "UK weather: Met Office issues flood warning as thunder and hail batter parts of Britain",
+#     "url": "https://www.independent.co.uk/weather/met-office-weather-warnings-flood-uk-b2335970.html",
+#     "urlToImage": "https://static.independent.co.uk/2023/05/08/14/SEI154823329.jpg?quality=75&width=1200&auto=webp",
+#     "weather_stats": {
+#       "feels_like_mean": 13.092333333333334,
+#       "feels_like_std": 1.7907074482634249,
+#       "temp_mean": 13.351583333333334,
+#       "temp_std": 1.742879388949726,
+#       "temp_max": 19.35,
+#       "temp_min": 8.43
+#     }
+#   }
+# ]

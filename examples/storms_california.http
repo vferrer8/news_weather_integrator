@@ -1,0 +1,201 @@
+GET http://localhost:8000/articles
+    ?topic=California%20storms 
+    &lat_analysis=36.778259
+    &lon_analysis=-119.417931
+    &num_days_analysis=5
+    &weather_units=metric
+Content-Type: application/json
+
+# RESPONSE
+
+# [
+#   {
+#     "author": "Molly Taft",
+#     "content": "After a wild winter of more than a dozen huge storms and record-breaking snowfall in the Sierra Nevadas, Californias big flood season is just getting started. \r\nLast week, the National Weather Servic… [+2213 chars]",
+#     "description": "After a wild winter of more than a dozen huge storms and record-breaking snowfall in the Sierra Nevadas, California’s big flood season is just getting started. Read more...",
+#     "publishedAt": "2023-05-01T18:50:22Z",
+#     "source": {
+#       "id": null,
+#       "name": "Gizmodo.com"
+#     },
+#     "title": "See Rushing Waterfalls and Submerged Roads as California Floods",
+#     "url": "https://gizmodo.com/see-rushing-waterfalls-and-submerged-roads-as-californi-1850391978",
+#     "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ae2ecdebfdf2051bcc17a771c51f2339.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 22.717750000000002,
+#       "feels_like_std": 6.29250674321811,
+#       "temp_mean": 23.344999999999995,
+#       "temp_std": 6.623175378988566,
+#       "temp_max": 35.82,
+#       "temp_min": 7.99
+#     }
+#   },
+#   {
+#     "author": "Gabriela Aoun Angueira, Grist",
+#     "content": "This story was originally published by Grist. Sign up for Grists weekly newsletter here.\r\nChris Bowe was preparing for his daughters ninth birthday party in February when a drenching storm knocked ou… [+6924 chars]",
+#     "description": "The state might require every electric vehicle to be capable of powering your home—and the grid—through a process called bi-directional charging.",
+#     "publishedAt": "2023-05-04T12:54:00Z",
+#     "source": {
+#       "id": null,
+#       "name": "Gizmodo.com"
+#     },
+#     "title": "Electric Vehicles Could Become a Blackout Solution in California",
+#     "url": "https://gizmodo.com/electric-vehicles-could-become-a-blackout-solution-in-c-1850403099",
+#     "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5b31ce6f7311225043a509d60f24ba9a.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 16.686083333333332,
+#       "feels_like_std": 6.618335912077751,
+#       "temp_mean": 17.385,
+#       "temp_std": 6.5620177774008175,
+#       "temp_max": 34.71,
+#       "temp_min": 7.1
+#     }
+#   },
+#   {
+#     "author": "Leo Aquino, CEPF",
+#     "content": "Our experts answer readers' tax questions and write unbiased product reviews (here's how we assess tax products). In some cases, we receive a commission from our partners; however, our opinions are o… [+3208 chars]",
+#     "description": "Because of recent winter storms, California taxpayers get six extra months to file their taxes, now due on October 16, 2023.",
+#     "publishedAt": "2023-04-12T19:08:47Z",
+#     "source": {
+#       "id": "business-insider",
+#       "name": "Business Insider"
+#     },
+#     "title": "3 ways California taxpayers can take advantage of their 6-month tax-filing extension",
+#     "url": "https://www.businessinsider.com/personal-finance/california-tax-extension-october-accountant-tips-2023-4",
+#     "urlToImage": "https://i.insider.com/6435e511ca216e0018212259?width=1200&format=jpeg",
+#     "weather_stats": {
+#       "feels_like_mean": 17.095916666666668,
+#       "feels_like_std": 4.8730180622499235,
+#       "temp_mean": 17.369000000000003,
+#       "temp_std": 4.8613776101952375,
+#       "temp_max": 30.77,
+#       "temp_min": 7.44
+#     }
+#   },
+#   {
+#     "author": "Molly Taft",
+#     "content": "A car drives through floodwaters in the reemerging Tulare Lake near Corcoran, CA on April 27, 2023. \r\nAfter a wild winter of more than a dozen huge storms and record-breaking snowfall in the Sierra N… [+3606 chars]",
+#     "description": "After a wild winter of more than a dozen huge storms and record-breaking snowfall in the Sierra Nevadas, California’s big flood season is just getting...",
+#     "publishedAt": "2023-05-01T18:50:22Z",
+#     "source": {
+#       "id": null,
+#       "name": "Yahoo Entertainment"
+#     },
+#     "title": "See Rushing Waterfalls and Submerged Roads as California Floods",
+#     "url": "https://news.yahoo.com/see-rushing-waterfalls-submerged-roads-185022655.html",
+#     "urlToImage": "https://media.zenfs.com/en/gizmodo_news_915/0b58b664a6f7805bbf472f301f5221ba",
+#     "weather_stats": {
+#       "feels_like_mean": 22.717750000000002,
+#       "feels_like_std": 6.29250674321811,
+#       "temp_mean": 23.344999999999995,
+#       "temp_std": 6.623175378988566,
+#       "temp_max": 35.82,
+#       "temp_min": 7.99
+#     }
+#   },
+#   {
+#     "author": "https://www.facebook.com/bbcnews",
+#     "content": "California's Yosemite National Park will partly close for at least six days starting Friday as melting snow in the region poses a risk of flooding.\r\nSnowfall levels in the Sierra Nevada area where th… [+1584 chars]",
+#     "description": "The record amount of snow this winter in the Yosemite Valley is forecast to melt and flood local river.",
+#     "publishedAt": "2023-04-26T16:04:59Z",
+#     "source": {
+#       "id": "bbc-news",
+#       "name": "BBC News"
+#     },
+#     "title": "Yosemite National Park to close amid flood threat from melting snow",
+#     "url": "https://www.bbc.co.uk/news/world-us-canada-65399335",
+#     "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/63D8/production/_129506552_gettyimages-1247432088.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 19.588916666666666,
+#       "feels_like_std": 4.782480246056597,
+#       "temp_mean": 19.86875,
+#       "temp_std": 4.866563946241449,
+#       "temp_max": 29.1,
+#       "temp_min": 9.66
+#     }
+#   },
+#   {
+#     "author": "Maanvi Singh in Hollister, California",
+#     "content": "The water came in a rush tearing through planted rows of cabbage, broccoli and cauliflower before crashing into the tractors and farm equipment. Within hours, much of María Inés Cataláns 41-acre (17-… [+8112 chars]",
+#     "description": "Government aid programs, set up to favor corporate farms, are out of reach to those who supply farmers markets and restaurantsThe water came in a rush – tearing through planted rows of cabbage, broccoli and cauliflower before crashing into the tractors and fa…",
+#     "publishedAt": "2023-04-18T10:00:37Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "Floods tore through California crops – now small immigrant farmers face destitution",
+#     "url": "https://www.theguardian.com/us-news/2023/apr/18/california-immigrant-farmers-flooding",
+#     "urlToImage": "https://i.guim.co.uk/img/media/e7c563ad2793adc6d18f59cecd373eff2e0ba9d6/0_117_6000_3600/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e9957e9a4f3a8e4f98524ad1b26a2ccf",
+#     "weather_stats": {
+#       "feels_like_mean": 13.960916666666666,
+#       "feels_like_std": 4.938361922782914,
+#       "temp_mean": 14.669833333333335,
+#       "temp_std": 4.925315667626828,
+#       "temp_max": 26.2,
+#       "temp_min": 4.07
+#     }
+#   },
+#   {
+#     "author": "Maanvi Singh in Planada",
+#     "content": "Nearly four months after the waters washed through Planada, most of Samuel Gomezs one-bedroom house has been stripped back to the studs. He was still sleeping in a small room at the back of the house… [+14424 chars]",
+#     "description": "The small, agricultural town of Planada was inundated amid a wave of intense storms this winter. Residents, many of whom are undocumented, say they have been neglectedNearly four months after the waters washed through Planada, most of Samuel Gomez’s one-bedro…",
+#     "publishedAt": "2023-05-08T10:00:03Z",
+#     "source": {
+#       "id": null,
+#       "name": "The Guardian"
+#     },
+#     "title": "‘They’re sacrificing us’: a California town feels ignored months after flood",
+#     "url": "https://www.theguardian.com/us-news/2023/may/08/flood-ravaged-residents-ignored-planada-california",
+#     "urlToImage": "https://i.guim.co.uk/img/media/5f44848889d4d4be90983e15a61647fa8d08a4aa/164_0_4838_2903/master/4838.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=30eb1e38972445a1a99a029944b28315",
+#     "weather_stats": {
+#       "feels_like_mean": 13.768583333333334,
+#       "feels_like_std": 3.6378674369464754,
+#       "temp_mean": 14.434416666666666,
+#       "temp_std": 3.738855663658263,
+#       "temp_max": 25.09,
+#       "temp_min": 6.77
+#     }
+#   },
+#   {
+#     "author": "The Associated Press",
+#     "content": "This video still image provided by Arnold Schwarzenegger's office, shows the former California governor (center back) repairing a pothole on a street in his Los Angeles neighborhood on Tuesday.\r\nThe … [+1560 chars]",
+#     "description": "The actor and former California governor tweeted a video of him and a helper repairing a road in the Brentwood area. \"You have to do it yourself. This is crazy,\" he said.",
+#     "publishedAt": "2023-04-12T15:01:27Z",
+#     "source": {
+#       "id": null,
+#       "name": "NPR"
+#     },
+#     "title": "Tired of waiting, Arnold Schwarzenegger fills a pothole in his LA neighborhood",
+#     "url": "https://www.npr.org/2023/04/12/1169459278/tired-of-waiting-arnold-schwarzenegger-fills-a-pothole-in-his-la-neighborhood",
+#     "urlToImage": "https://media.npr.org/assets/img/2023/04/12/ap23102039889278_wide-b4e529391421e82dd59dace91d62277856e55d2a-s1400-c100.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 17.125916666666665,
+#       "feels_like_std": 4.865222925071805,
+#       "temp_mean": 17.40125,
+#       "temp_std": 4.8534542083036945,
+#       "temp_max": 30.77,
+#       "temp_min": 7.44
+#     }
+#   },
+#   {
+#     "author": "Manuela López Restrepo",
+#     "content": "One of thousands of creatures known as \"by-the-wind sailors\" that have been washing ashore on Southern California beaches in April.\r\nAllen J. Schaben/Los Angeles Times via Getty Images\r\nThe Velella v… [+3486 chars]",
+#     "description": "The tiny disc-like critters are known as Velella velella, a name so nice you gotta say it twice.",
+#     "publishedAt": "2023-04-26T22:24:26Z",
+#     "source": {
+#       "id": null,
+#       "name": "NPR"
+#     },
+#     "title": "Thousands of little blue creatures are washing up on California beaches",
+#     "url": "https://www.npr.org/2023/04/26/1172249942/blue-creatures-washing-up-california-shore-by-the-wind-sailors-valella-valella",
+#     "urlToImage": "https://media.npr.org/assets/img/2023/04/26/gettyimages-1252027206-edit_wide-9601a0a8a0cbe97492a72331169a808a6e31577a-s1400-c100.jpg",
+#     "weather_stats": {
+#       "feels_like_mean": 19.870416666666664,
+#       "feels_like_std": 5.04123940940253,
+#       "temp_mean": 20.158833333333337,
+#       "temp_std": 5.167364327162916,
+#       "temp_max": 31.56,
+#       "temp_min": 9.66
+#     }
+#   }
+# ]
