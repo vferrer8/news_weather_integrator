@@ -1,12 +1,11 @@
-from typing import Any, Literal
+from typing import Any
 import requests
-from pprint import pprint
 import pandas as pd
 from src.config import WEATHER_BASE_URL, WEATHER_API_KEY, NEWS_BASE_URL, NEWS_API_KEY, DEFAULT_UNITS
 from src.models import Article, WeatherStats
 from dateutil.parser import parse
 from datetime import timedelta
-from pprint import pprint
+
 
 
 # remove this after testing
@@ -41,7 +40,7 @@ def extract_start_timestamp(end_time: float, num_days: int) -> float:
     return end_time - timedelta(days=num_days).total_seconds()
 
 
-def get_weather_data(api_key: str, lat: float, lon: float, start: int, end: int, units: str) -> dict:
+def get_weather_data(api_key: str, lat: float, lon: float, start: float, end: float, units: str) -> dict:
     return weather_response
     weather_params = {
         "appid": api_key,
