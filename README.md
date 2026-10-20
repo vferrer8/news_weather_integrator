@@ -1,5 +1,5 @@
 # News and Weather Integrator
-This project proposes an `ETL` pipeline to collect and integrate data from the `OpenWeatherMap API` and `NewsAPI` data sources:
+This project proposes an `ETL` pipeline to collect and integrate data from two sources, the `OpenWeatherMap API` and `NewsAPI`:
 
 - **OpenWeatherMap API** (https://openweathermap.org/api)
 
@@ -9,7 +9,7 @@ This project proposes an `ETL` pipeline to collect and integrate data from the `
 
     API docs: https://newsapi.org/docs/endpoints
 
-The pipeline will allow end users to gather historical articles that contain weather statistical data, this can provide a broad training dataset to be used for predicting future natural disasters based on weather forecast.
+The pipeline lets end users gather historical news articles enriched with weather statistics. This can provide a broad training dataset to be used for predicting natural disasters from weather forecasts.
 
 
 ## Solution design
@@ -28,7 +28,7 @@ The following image shows the pipeline workflow:
 
 2. The `Integrator` application calls the `NewsAPI` to fetch recent articles related to `flooding in Somerset`.
 
-3. The data is sent back to the `Integratior` application. For each of the articles collected, the `published` time is extracted.
+3. The data is sent back to the `Integrator` application. For each of the articles collected, the `published` time is extracted.
 
 4. For each of the articles collected, the `Integrator` application calls the `WeatherAPI` to request weather data. This will return data for a window analysis, with `end time` being the published date of the article, and `start time` a number of days before the article was published (the number of days is set by the user).
 
@@ -39,16 +39,16 @@ The following image shows the pipeline workflow:
 
 **Not implemented in the source code:**
 
-5.1. The data could be stored in a data base and run the pipeline on schedule to collect real time data and provide a wider dataset to the user.
+5.1. The data could be stored in a database, with the pipeline running on a schedule, to collect real time data and provide a wider dataset to the user.
 
-5.2. The data could be sent back to the application based on filtering and sortering parameters.
+5.2. The data could be sent back to the application based on filtering and sorting parameters.
 
 ## How the application interacts with the APIs
 Both APIs have python client libraries:
 - **News API**: https://newsapi.org/docs/client-libraries/python
 - **Weather**: https://pyowm.readthedocs.io
 
-However, the application is using `requests` library.
+However, the application calls both APIs directly with the `requests` library.
 
 ## Other use cases
 - Market studies for the use of renewable energies in different locations.
@@ -70,13 +70,16 @@ However, the application is using `requests` library.
     ```
     source venv/bin/activate
     ```
-3. Install the required dependencies for this project from the `requirements.txt`
+3. Install the required dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
 
-4. Set `api keys` as environment variables
+4. Set the API keys as environment variables.
 
 - For Windows users:
 
-    Create a `.env.sh` file and add the following api keys:
+    Create a `.env.bat` file and add the following API keys:
     ```
     set WEATHER_API_KEY=
     set NEWS_API_KEY=
@@ -86,9 +89,9 @@ However, the application is using `requests` library.
     .env.bat
     ```
 
-- For Linux users:
+- For Linux / macOS users:
 
-    Create a `.env.sh` file and add the following api keys:
+    Create a `.env.sh` file and add the following API keys:
     ```
     export WEATHER_API_KEY=
     export NEWS_API_KEY=
@@ -104,7 +107,7 @@ python main.py
 ```
 
 ## OpenAPI documentation
-Access ` http://127.0.0.1:8000/docs` to see the interactive API documentation.
+Open `http://127.0.0.1:8000/docs` to see the interactive API documentation.
 ![](img/openapi_docs.png)
 
 ## Examples
@@ -112,7 +115,7 @@ Access ` http://127.0.0.1:8000/docs` to see the interactive API documentation.
     GET http://localhost:8000/articles
 ```
 - ### **Extreme heat in Spain**
-    This example provides a collection of articles related to recent extream heat in Spain with statistical weather data.
+    This example provides a collection of articles related to recent extreme heat in Spain with statistical weather data.
 
     **Query parameters**:
 
@@ -129,7 +132,7 @@ Access ` http://127.0.0.1:8000/docs` to see the interactive API documentation.
     [Link to the http example](examples/extreme_heat_spain.http)
 
 - ### **Flooding in Somerset**
-    This example provides a collection of articles related to recent flooding in somerset with statistical weather data.
+    This example provides a collection of articles related to recent flooding in Somerset with statistical weather data.
 
     **Query parameters**:
 
@@ -163,4 +166,4 @@ Access ` http://127.0.0.1:8000/docs` to see the interactive API documentation.
     [Link to the http example](examples/storms_california.http)
 
 ## Tests
-Yet to be implemented.
+Not implemented yet.
